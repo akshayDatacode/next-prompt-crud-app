@@ -9,7 +9,7 @@ const Home = () => {
           <span className="orange_gradient text-center">AI-Powered</span>
         </h1>
         <p className="desc text-center">
-          Next.js recently became the official React framework as outlined in React docs. In this course, you'll learn the most important Next.js concepts and how they fit into the React ecosystem
+          Next.js recently became the official React framework as outlined in React docs. In this course, you will learn the most important Next.js concepts and how they fit into the React ecosystem
         </p>
         <Feed />
       </section>
