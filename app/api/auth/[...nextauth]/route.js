@@ -24,7 +24,6 @@ const handler = NextAuth({
       return session
     },
     async signIn({ profile }) {
-      debugger
       try {
         // serverless route -> lambda function (it will open up then its called)-> dynamodb 
         await conntectToDB()
@@ -32,7 +31,6 @@ const handler = NextAuth({
         const userExists = await User.findOne({ email: profile.email })
         // if not, create a new user
         if (!userExists) {
-          debugger
           await User.create({
             email: profile.email,
             userName: profile.name.replace(" ", "").toLowerCase(),
