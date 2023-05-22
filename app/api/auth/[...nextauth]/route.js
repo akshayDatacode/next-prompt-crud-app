@@ -16,6 +16,9 @@ const handler = NextAuth({
     //   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     // })
   ],
+  pages: {
+    error: "/auth/error",
+  },
   secret: process.env.NEXTAUTH_URL_SECRET,
   callbacks: {
     async session({ session }) {
